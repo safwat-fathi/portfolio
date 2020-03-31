@@ -1,21 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#F2C70C" />
-    <meta name="description" content="Safwat Fathi - Front-End Developer" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%profile.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" href="./img/vector/isolated-layout.svg" />
+    <!-- title -->
+    <title>Safwat Fathi - Front-End Developer</title>
+    <!-- open graph meta tags -->
+    <meta property="og:title" content="Safwat Fathi - Front-End Developer" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./img/vector/default.svg" />
 
-    <title>Safwat Fathi - Front-End</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- css styles -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <nav>
+      <div class="nav_logo">
+        <img src="./img/vector/default-monochrome.svg" alt="navigation logo" />
+      </div>
+      <div class="nav_pic">
+        <img src="./img/personal-pic.jpg" alt="personal pic" />
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#experience">EXPERIENCE</a>
+        </li>
+        <li>
+          <a href="#education">EDUCATION</a>
+        </li>
+        <li>
+          <a href="#skills">SKILLS</a>
+        </li>
+        <li>
+          <a href="#portfolio">PORTFOLIO</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about" class="about">
+        <div class="about_contact">
+          <h1>Safwat <span>Fathi</span></h1>
+          <h4>
+            Cairo, Heliopolis - +201143341684 -
+            <span>me@safwatfathi.tech</span>
+          </h4>
+        </div>
+        <div class="about_bio">
+          <p>
+            I am a front-end web developer simple as that!. Trying whatever i
+            can to enjoy this remarkable career with learning my tools of craft
+            and passion towards what i am doing. Which make me enjoy building
+            user-friendly applications.
+          </p>
+        </div>
+        <div class="about_social">
+          <ul>
+            <li>
+              <a href="#" title="Linked-in">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Github">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Stack overflow">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="experience" class="experience">
+        <div class="title">
+          <h2>Experience</h2>
+        </div>
+        <div class="experience_details">
+          <div class="job">
+            <div class="job_title">
+              <h2>UI Web Developer</h2>
+              <p class="date">Aug 2018 - Feb 2019</p>
+            </div>
+            <div class="job_org">
+              <h4>New Cairo Academy</h4>
+            </div>
+            <div class="job_desc">
+              <ul>
+                <li>Ensure the technical feasibility of UI/UX designs.</li>
+                <li>Create user-friendly web applications.</li>
+                <li>Implement mobile-first development approcah.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="job_title">
+              <h2>Front-End Web Developer</h2>
+              <p class="date">July 2019 - Present</p>
+            </div>
+            <div class="job_org">
+              <h4>MaxyCode</h4>
+            </div>
+            <div class="job_desc">
+              <ul>
+                <li>Implement UI/UX designs to ReactJS applications.</li>
+                <li>Performance-oriented applications.</li>
+                <li>Cross-browser compatability assurance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="education" class="education">
+        <div class="title">
+          <h2>Education</h2>
+        </div>
+        <div class="education_details">
+          <div class="org">
+            <div class="org_name">
+              <h2>
+                The Higher Institute For Co-operative and Managerial Studies
+              </h2>
+              <p class="date">2012</p>
+            </div>
+            <div class="Major">
+              <h4>Bachelor Degree: Business Administration</h4>
+            </div>
+          </div>
+          <div class="org">
+            <div class="org_name">
+              <h2>
+                Faculty of Statistical Studies and Research - Cairo university
+              </h2>
+              <p class="date">Present</p>
+            </div>
+            <div class="Major">
+              <h4>Associate's Degree: Computer Science</h4>
+            </div>
+          </div>
+        </div>
+        <div class="courses">
+          <h3>Courses</h3>
+          <ul>
+            <li>Modern JavaScript From The Beginning - online course.</li>
+            <li>JavaScript the hard parts v2 - online course.</li>
+            <li>Modern React with Redux - online course.</li>
+            <li>
+              Advanced CSS and Sass: Flexbox, Grid, Animations and More - online
+              course.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="skills" class="skills">
+        <div class="title">
+          <h2>Skills</h2>
+        </div>
+        <div class="skills_keys">
+          <h3>Key Skills</h3>
+          <ul>
+            <li>Firm understanding of data structure and algorithms.</li>
+            <li>
+              Good Implementation of OOP and functional programming paradigms.
+            </li>
+            <li>Familiarity with some of desgin patterns.</li>
+          </ul>
+        </div>
+        <div class="skills_set">
+          <h3>Web Development</h3>
+          <ul>
+            <li>
+              <i class="fab fa-html5"></i>
+            </li>
+            <li>
+              <i class="fab fa-css3"></i>
+            </li>
+            <li>
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li>
+              <i class="fab fa-react"></i>
+            </li>
+            <li>
+              <i class="fab fa-node-js"></i>
+            </li>
+            <li>
+              <i class="fab fa-sass"></i>
+            </li>
+            <li>
+              <i class="fab fa-npm"></i>
+            </li>
+            <li>
+              <i class="fab fa-gulp"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="portfolio" class="portfolio">
+        <div class="title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio_gallery">
+          <div class="project">
+            <div class="project_img">
+              <a href="#">
+                <img src="./img/profile.png" alt="" title="project name" />
+              </a>
+            </div>
+            <div class="project_desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                qui, voluptatem doloremque suscipit deleniti aut iure neque.
+                Deserunt reprehenderit numquam modi.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_img">
+              <a href="#">
+                <img src="./img/profile.png" alt="" title="project name" />
+              </a>
+            </div>
+            <div class="project_desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                qui, voluptatem doloremque suscipit deleniti aut iure neque.
+                Deserunt reprehenderit numquam modi.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_img">
+              <a href="#">
+                <img src="./img/profile.png" alt="" title="project name" />
+              </a>
+            </div>
+            <div class="project_desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                qui, voluptatem doloremque suscipit deleniti aut iure neque.
+                Deserunt reprehenderit numquam modi.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_img">
+              <a href="#">
+                <img src="./img/profile.png" alt="" title="project name" />
+              </a>
+            </div>
+            <div class="project_desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                qui, voluptatem doloremque suscipit deleniti aut iure neque.
+                Deserunt reprehenderit numquam modi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

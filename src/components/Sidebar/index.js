@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 // import styles
 import styles from "./Sidebar.module.css";
 
+// import assets
+import pic from "../../img/personal-pic.jpg";
+
 export default function() {
   return (
     <div className={styles.Sidebar}>
       <nav>
         <div className="nav_pic">
-          <img src="../../../public/img/personal-pic.jpg" alt="" />
+          <img src={pic} alt="" />
         </div>
         <ul className={styles.menu}>
           <li>
