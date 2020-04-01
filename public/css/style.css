@@ -325,8 +325,9 @@ section.portfolio .portfolio_gallery {
 }
 
 .project_img {
-  height: 250px;
+  height: 120px;
   width: 250px;
+  margin-bottom: 1.5rem;
   overflow: hidden;
   border: 6px solid var(--prim_color_dark);
   border-radius: 10px;
@@ -427,7 +428,7 @@ section.portfolio .portfolio_gallery {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   :root {
     font-size: 12px;
   }
@@ -441,14 +442,16 @@ section.portfolio .portfolio_gallery {
   }
 
   .project_img {
-    height: 200px;
+    height: 100px;
     width: 200px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* aaaaaaaaaaaaaaa */
+  :root {
+    /* font-size: 17px; */
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
