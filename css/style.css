@@ -1,5 +1,6 @@
 /* importing normalize */
 @import "./normalize.css";
+@import "./all.min.css";
 
 /* generic styles
 -------------------- */
@@ -317,13 +318,6 @@ section.portfolio .portfolio_gallery {
   flex-wrap: wrap;
 }
 
-.project {
-  width: 47%;
-}
-.project:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .project_img {
   height: 120px;
   width: 250px;
@@ -350,39 +344,23 @@ section.portfolio .portfolio_gallery {
 ---------------------
 --------------------- */
 
-@media (max-width: 370px) {
+@media (min-width: 319px) {
   :root {
     font-size: 10px;
-  }
-}
-
-@media (max-width: 375px) {
-  :root {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 576px) {
-  :root {
-    font-size: 12px;
   }
 
   body {
     padding-left: 0;
   }
 
-  main {
-    padding-top: 10vh;
+  section {
+    padding: 0 0 0 0.5rem;
   }
 
   nav {
     width: 100%;
-    height: 29vh;
+    height: 23vh;
     padding: 0;
-  }
-
-  section {
-    padding: 0 2rem;
   }
 
   .nav_pic {
@@ -402,6 +380,22 @@ section.portfolio .portfolio_gallery {
   nav ul.menu a {
     font-size: 1.2rem;
   }
+}
+
+@media (min-width: 374px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 12px;
+  }
+
+  main {
+    padding-top: 10vh;
+  }
 
   section.about .about_contact h1 {
     font-size: 6rem;
@@ -413,45 +407,39 @@ section.portfolio .portfolio_gallery {
   }
 
   .project {
-    width: unset;
+    width: min-content;
   }
 
-  .project:not(:last-child) {
+  /* .project:not(:last-child) {
     margin-right: 0;
     margin-bottom: 1rem;
-  }
-
-  /* .project_img {
-    height: 165px;
-    width: 165px;
   } */
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (min-width: 767px) {
   :root {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   body {
-    padding-left: 20rem;
+    padding-left: 0;
   }
 
-  nav {
-    padding: 35px;
+  section.portfolio .portfolio_gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
   }
 
-  .project_img {
-    height: 100px;
-    width: 200px;
+  .project {
+    margin-right: 1rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  :root {
-    /* font-size: 17px; */
-  }
+  /* aaaaaaaaaaaaaaa */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
